@@ -1,0 +1,75 @@
+
+<html>
+    <head><title>string methods</title>
+        <body>
+            <h3>string methods</h3>
+            <h3>string length</h3>
+            <p id="str1"></p>
+            <h3>string slice</h3>
+            <p id="str2"></p>
+            <h3>string concat</h3>
+            <p id="str3"></p>
+            <h3>sub string</h3>
+            <p id="str4"></p>
+            <h3>charAt</h3>
+            <p id="str5"></p>
+            <h3>string split</h3>
+            <p id="str6"></p>
+            <h3>array methods</h3>
+            <h3>array length</h3>
+            <p id="array1"></p>
+            <h3>array push</h3>
+             <p id="array2"></p>
+             <p id="array3"></p>
+             <h3>array pop</h3>
+             <p id="array4"></p>
+             <p id="array5"></p>
+             <h3>array join</h3>
+             <p id="array6"></p>
+             <p id="array7"></p>
+            </p>
+            <script>
+                let text = "rabbit";
+                 document.getElementById("str1").innerHTML = text.length;
+                "<br>"
+                let text1 = "rabbit, cat, dog";
+                let text2 = text1.slice(7,13);
+                document.getElementById("str2").innerHTML = text2; 
+                "<br>"
+                let text3 = "good";
+                let text4 = "morning";
+                let text5 = text3.concat(" ",text4);
+                document.getElementById("str3").innerHTML = text5;
+                "<br>"
+                let str = "cat, rabbit, dog";
+                document.getElementById("str4").innerHTML = str.substring(5,11);
+                 "<br>"
+                 let text6 = "GOOD MORNING"
+                  document.getElementById("str5").innerHTML = text6.charAt(10);
+                  "<br>"
+                  let text7 = "rabbit, cat, dog";
+                   const array = text7.split(",");
+                 document.getElementById("str6").innerHTML = array[1]; 
+
+                 const animals = ["rabbit", "dog", "cat", "lion"];
+                 let length = animals.length;
+                 document.getElementById("array1").innerHTML = length;
+
+                  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                  document.getElementById("array2").innerHTML = fruits;
+                  fruits.push("strawberry");
+                  document.getElementById("array3").innerHTML = fruits;
+
+                 const fruit = ["mango", "banana", "strawberry"];
+                 document.getElementById("array4").innerHTML = fruit;
+                 fruit.pop();
+                 document.getElementById("array5").innerHTML = fruit;
+
+                 const animal = ["rabbit", "dog", "lion", "cat"];
+                 let txt = animal.join("$");
+                 document.getElementById("array6").innerHTML = txt;
+
+            </script>
+        </body>
+    </head>
+</html>

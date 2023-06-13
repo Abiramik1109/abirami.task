@@ -1,0 +1,71 @@
+<html>
+<head><title>array</title>
+<body>
+            <h3>highest number</h3>
+            <p id="text1"></p>
+            <h3>array length</h3>
+            <p id="text2"></p>
+            <h3>array push</h3>
+            <p id="text3"></p>
+            <p id="text4"></p>
+            <h3>array pop</h3>
+            <p id="text5"></p>
+            <p id="text6"></p>
+            <h3>unshift method</h3>
+            <p id="text7"></p>
+            <p id="text8"></p>
+            <h3>shift method</h3>
+            <p id="text9"></p>
+            <p id="text0"></p>
+            <h3>array splice</h3>
+            <p id="text"></p>
+            <p id="array"></P>
+             <h3>array join</h3>   
+             <p id="array1"></p>   
+             <h3>indexof</h3>
+             <p id="array2"></p>
+            <script>
+             const number = [5, 2, 3, 4, 1,6];
+             number.sort(function(a, b){return b-a});
+             document.getElementById("text1").innerHTML = "The highest number is " + number[0];
+
+             const animals = ["rabbit", "dog", "cat", "lion"];
+             let length = animals.length;
+             document.getElementById("text2").innerHTML = length;
+
+             const fruits = ["rabbit", "dog", "cat", "tiger"];
+             document.getElementById("text3").innerHTML = fruits;
+             fruits.push("lion");
+             document.getElementById("text4").innerHTML = fruits;
+
+             const fruit = ["mango", "banana", "strawberry"];
+             document.getElementById("text5").innerHTML = fruit;
+             fruit.pop();
+             document.getElementById("text6").innerHTML = fruit;
+
+             const fruit1 = ["tiger", "cat", "lion", "dog"];
+             document.getElementById("text7").innerHTML = fruit1;
+             fruit1.unshift("rabbit");
+             document.getElementById("text8").innerHTML = fruit1;
+
+             const fruit2 = ["Banana", "Orange", "Apple", "Mango"];
+             document.getElementById("text9").innerHTML = fruit2;
+             fruit2.shift();
+             document.getElementById("text0").innerHTML = fruit2;
+
+             const fruit3 = ["apple", "mango", "orange", "banana"];
+             document.getElementById("text").innerHTML = fruit3;
+             fruit3.splice(2, 0, "lemon", "strawberry");
+             document.getElementById("array").innerHTML = fruit3;
+
+             const animal = ["rabbit", "dog", "lion", "cat"];
+              let text = animal.join("*");
+              document.getElementById("array1").innerHTML = text;
+
+              const animal1 = ["rabbit", "dog", "lion", "cat"];
+              let text1 = animal1.indexOf("dog");
+              document.getElementById("array2").innerHTML = text1;
+
+</script>
+</head>
+</html>
